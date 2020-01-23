@@ -1,3 +1,4 @@
+import { AppRoutes } from './app.routes';
 import { LoginService } from './login/services/login.service';
 import { CoursesService } from './courses.services';
 import { BrowserModule } from '@angular/platform-browser';
@@ -26,14 +27,9 @@ import { RouterModule } from '@angular/router';
     HomeComponent
   ],
   imports: [
-    RouterModule.forRoot([{
-      path : './login/components/',
-      component: LoginComponent
-    },
-      
-    ]),
-    BrowserModule
-  ],
+    BrowserModule,
+    RouterModule.forRoot(AppRoutes)
+    ],
   providers: [
     CoursesService, // We provide CoursesService as providers modules
     LoginService,

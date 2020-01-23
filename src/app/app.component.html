@@ -1,7 +1,12 @@
 <h1> ANGULAR </h1>
-<courses></courses>
 
 <nav>
-    <a routerLink="./login/components/"> LOGIN </a>
-    <router-outlet></router-outlet>
+    
+    <a [routerLink]="['/login']" routerLinkActive="active"> LOGIN </a>
+    <a [routerLink]="['/registrazione']" routerLinkActive="active"> REGISTRAZIONE </a>
+    
 </nav>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
