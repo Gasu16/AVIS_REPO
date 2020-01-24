@@ -3,17 +3,27 @@
 
 <head>
 <meta charset="utf-8" />
-<title>LOGIN PAGE</title>
+<title>senza nome</title>
 <meta name="generator" content="Geany 1.32" />
 </head>
 
 <body>
-<img src="/hello-angular5/avislogo.png" width="1280" height="400">
 
-<form action="login.html">
-    <input type="submit" value="LOGIN">
-</form>
+    <form id="login" action="/action_page.php" target="_blank">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br><br>
+        
+        <input type="button" onclick="funzioneJS()" value="INVIA">
+        
+    </form>
+    
+       
+    <script>
+        function funzioneJS(){
+            document.getElementById("login").submit();
+        }
 
+    </script>
 </body>
 
 </html>

@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
 <meta charset="utf-8" />
-<title>LOGIN PAGE</title>
-<meta name="generator" content="Geany 1.32" />
+
 </head>
 
 <body>
-<img src="/hello-angular5/avislogo.png" width="1280" height="400">
+    
+    <form id="registrazione" action="/action_page.php" target="_blan">
+        Nome: <input type="text" name="fname"><br>
+        Cognome: <input type="text" name="lname"><br>
 
-<form action="registrazione.html">
-    <input type="submit" value="REGISTRAZIONE">
-</form>
+        Sesso:
+        <input type="radio" name="sex" checked="false">M
+        <input type="radio" name="sex" checked="false">F<br>
+        Data di nascita: <input type="text" name="data" href="calendario.html"><br>
+        Codice fiscale: <input type="text" name="cfname"><br>
 
+    </form>
+    
+    <script>
+        function registrazioneJS(){
+            document.getElementById("registrazione").submit();
+        }
+    </script>
 </body>
 
 </html>

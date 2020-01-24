@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 
 export const AppRoutes: Routes = [
-    {path: '', component: AppComponent},
+    {path: '', component: HomeComponent},
     {path : 'login', component: LoginComponent },
     {path : 'registrazione', component: RegistrazioneComponent}
 ];

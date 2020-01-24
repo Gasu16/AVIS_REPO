@@ -1,12 +1,15 @@
 <h1> ANGULAR </h1>
 
 <nav>
-    
-    <a [routerLink]="['/login']" routerLinkActive="active"> LOGIN </a>
-    <a [routerLink]="['/registrazione']" routerLinkActive="active"> REGISTRAZIONE </a>
+    <a [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"> HOME PAGE </a> <br>
+    <a routerLink="/login"> LOGIN </a> <br>
+    <a routerLink="/registrazione"> REGISTRAZIONE </a> <br>
     
 </nav>
 
 <main>
     <router-outlet></router-outlet>
 </main>
+
+
+
