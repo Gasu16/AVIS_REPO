@@ -1,40 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthenticationService } from 'src/app/services/authentication.service';
+import { HttpClientService } from 'src/app/services/http-client.service';
 
 @Component({
-  selector: 'login',
+  selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-
-
 export class LoginComponent implements OnInit {
-  constructor(){}
-  ngOnInit() {
-    
-  }
-/*
-  loginForm: FormGroup;
-  constructor(private formBuilder: FormBuilder) { 
-    
-  }
+
+  username = 'javainuse'
+  password = ''
+  invalidLogin = false
+
+  constructor(
+    private router: Router,
+    private loginservice: AuthenticationService,
+    private httpclientservice: HttpClientService) { }
 
   ngOnInit() {
-    this.loginForm =  this.formBuilder.group({
-      username: ['', Validators.required],
-      password: ['', Validators.required]
-    });
   }
 
-  get f(){
-    return this.loginForm.controls;
+  checkLogin() {
+    if (this.loginservice.authenticate(this.username, this.password)
+    ) {
+      this.router.navigate([''])
+      this.invalidLogin = false
+    } else
+      this.invalidLogin = true
   }
-
-  onSubmit(){
-    if(this.loginForm.invalid){
-      return;
-    }
-  }
-  */
 
 }

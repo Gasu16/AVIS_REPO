@@ -4,28 +4,36 @@
 
 <head>
 <meta charset="utf-8" />
-
+<title>senza nome</title>
+<meta name="generator" content="Geany 1.32" />
 </head>
 
-<body>
-    
-    <form id="registrazione" action="/action_page.php" target="_blan">
-        Nome: <input type="text" name="fname"><br>
-        Cognome: <input type="text" name="lname"><br>
-
-        Sesso:
-        <input type="radio" name="sex" checked="false">M
-        <input type="radio" name="sex" checked="false">F<br>
-        Data di nascita: <input type="text" name="data" href="calendario.html"><br>
-        Codice fiscale: <input type="text" name="cfname"><br>
-
+<div id="container">      
+    <form>
+    <label for="Name"> Nome: </label>
+    <input type="text" id="name" name="name"><br>
+    <label for="Last name"> Cognome: </label>
+    <input type="text" id="last_name" name="last_name"><br>
+    <label> Sesso: </label>
+    <input type="radio" name="sex" checked="false">M
+    <input type="radio" name="sex" checked="false">F<br>
+    <label for="Birthday"> Data di nascita: </label>
+    <input type="date" id="birthday" name="birthday"><br>
+    <label for="Codice Fiscale"> Codice fiscale: </label>
+    <input type="text" id="codice_fiscale" name="codice_fiscale"><br>
+    <label for="Email"> Email: </label>
+    <input type="text" id="email" name="email"><br>
+    <label for="username"> Username: </label>
+    <input type="text" id="username" name="username"><br>
+    <label for="password"> Password: </label>
+    <input type="password" id="password" name="password"><br>
+    <div id="lower">
+    <input type="submit" value="REGISTRATI">
+    </div><!--/ lower-->
     </form>
-    
-    <script>
-        function registrazioneJS(){
-            document.getElementById("registrazione").submit();
-        }
-    </script>
-</body>
+</div>
+
+
+
 
 </html>

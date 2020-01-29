@@ -15,6 +15,13 @@ import { RegistrazioneComponent } from './registrazione/components/registrazione
 import { RegistrazioneService } from './registrazione/services/registrazione.service';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { LogoutComponent } from './logout/logout.component';
+import { HeaderComponent } from './header/header.component';
+import { AuthenticationService } from './services/authentication.service';
+import { HttpClientService } from './services/http-client.service';
+import { UserDetailsComponent } from './user-details/user-details.component';
+
 
 @NgModule({
   declarations: [
@@ -24,16 +31,23 @@ import { RouterModule } from '@angular/router';
     contentAreaComponent,
     LoginComponent,
     RegistrazioneComponent,
-    HomeComponent
+    HomeComponent,
+    LogoutComponent,
+    HeaderComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    //HttpClient,
     RouterModule.forRoot(AppRoutes)
     ],
   providers: [
     CoursesService, // We provide CoursesService as providers modules
     LoginService,
     RegistrazioneService,
+    AuthenticationService,
+    HttpClientService
   ],
   bootstrap: [AppComponent]
 })

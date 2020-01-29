@@ -1,3 +1,4 @@
+import { LogoutComponent } from './logout/logout.component';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 
@@ -10,7 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 
 export const AppRoutes: Routes = [
-    {path: '', component: HomeComponent},
+    {path : '', component: HomeComponent},
     {path : 'login', component: LoginComponent },
+    {path : 'logout', component: LogoutComponent},
     {path : 'registrazione', component: RegistrazioneComponent}
 ];
