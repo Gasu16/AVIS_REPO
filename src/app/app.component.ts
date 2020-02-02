@@ -29,6 +29,6 @@ export class AppComponent{
   ){}
   ngOnInit(){
 //    this.httpclientservice.getLogin()
-//    this.httpclientservice.getUsers();
+    this.httpclientservice.getUsers();
   }
 }

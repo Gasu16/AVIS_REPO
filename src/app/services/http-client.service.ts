@@ -9,8 +9,7 @@ import { Response } from 'selenium-webdriver/http';
   providedIn: 'root'
 })
 export class HttpClientService {
-  constructor(private httpclientmodule: HttpClientModule){}
-/*
+
   private userApiURL = "http://localhost:8080/users";
 
   constructor(private httpclientmodule: HttpClientModule, private http: HttpClient) { }
@@ -19,5 +18,5 @@ export class HttpClientService {
     return this.http.get(this.userApiURL);
     
       
-  }*/
+  }
 }

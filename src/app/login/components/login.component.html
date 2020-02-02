@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
 <meta charset="utf-8" />
 <title>senza nome</title>
@@ -11,17 +10,23 @@
 <div id="container">     
     <form>
     <label for="username"> Username: </label>
-    <input type="text" id="username" name="username"><br>
+    <!--
+	    <input type="text" id="username" name="username"><br> 
+    	<input type="password" id="password" name="password"><br>
+    -->
+    <input type="text" class="form-control" id="username" [(ngModel)]="username" placeholder="Enter User Name" name="username">
+
     <label for="password"> Password: </label>
-    <input type="password" id="password" name="password"><br>
+    <input type="password" class="form-control" [(ngModel)]="password" id="password" placeholder="Enter password" name="password">
+
     <div id="lower">
     <input type="checkbox"><label for="checkbox"> Keep me logged in </label><br>
-    <input type="submit" value="Login">
+    <button (click)="checkLogin()" class="btn btn-success">Login</button>
+    <!--
+      <input type="submit" value="Login">
+    --> 
     </div><!--/ lower-->
     </form>
 </div>
-
-
-
 
 </html>
