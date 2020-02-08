@@ -1,3 +1,6 @@
+# FRONTEND: si trova qui nella cartella principale (la cartella AvisFrontend è vuota)
+# BACKEND: si trova sulla cartella Avis
+
 # AVIS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
