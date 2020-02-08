@@ -1,4 +1,4 @@
-# FRONTEND: si trova qui nella cartella principale (la cartella AvisFrontend è vuota)
+# FRONTEND: si trova qui nella cartella principale (la cartella AVISFrontEnd è vuota e da ignorare)
 # BACKEND: si trova sulla cartella Avis
 
 # AVIS
